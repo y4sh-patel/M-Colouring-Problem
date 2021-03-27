@@ -58,6 +58,8 @@ int main(){
     for(int i = 0 ; i < e ; i++){
         int x,y;
         cin>>x>>y;
+        x--;
+        y--;
         graph[x][y] = 1;
         graph[y][x] = 1;
     }
