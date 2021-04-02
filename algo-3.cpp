@@ -77,11 +77,11 @@ void takeInput(int n, int m, vector<vertex>& vertices){
 void addIndianMap(vector<vertex>& vertices){
     addOnVertices(0,1,vertices);
     addOnVertices(0,2,vertices);
-    addOnVertices(0,37,vertices);
+    addOnVertices(0,36,vertices);
     addOnVertices(1,2,vertices);
     addOnVertices(1,4,vertices);
     addOnVertices(1,5,vertices);
-    addOnVertices(1,37,vertices);
+    addOnVertices(1,36,vertices);
     addOnVertices(2,3,vertices);
     addOnVertices(2,5,vertices);
     addOnVertices(2,7,vertices);
@@ -90,7 +90,7 @@ void addIndianMap(vector<vertex>& vertices){
     addOnVertices(5,6,vertices);
     addOnVertices(5,7,vertices);
     addOnVertices(5,8,vertices);
-    addOnVertices(6,7,vertices);
+    addOnVertices(6,8,vertices);
     addOnVertices(7,8,vertices);
     addOnVertices(7,22,vertices);
     addOnVertices(7,23,vertices);
@@ -122,7 +122,6 @@ void addIndianMap(vector<vertex>& vertices){
     addOnVertices(21,22,vertices);
     addOnVertices(21,26,vertices);
     addOnVertices(21,35,vertices);
-    addOnVertices(21,36,vertices);
     addOnVertices(22,23,vertices);
     addOnVertices(23,24,vertices);
     addOnVertices(23,25,vertices);
