@@ -68,6 +68,8 @@ void takeInput(int n, int m, vector<vertex>& vertices){
 	for(int i = 0 ; i < e ; i++){
         int x,y;
         cin>>x>>y;
+        x--;
+        y--;
         addOnVertices(x,y,vertices);
     }
 }
@@ -75,9 +77,11 @@ void takeInput(int n, int m, vector<vertex>& vertices){
 void addIndianMap(vector<vertex>& vertices){
     addOnVertices(0,1,vertices);
     addOnVertices(0,2,vertices);
+    addOnVertices(0,37,vertices);
     addOnVertices(1,2,vertices);
     addOnVertices(1,4,vertices);
     addOnVertices(1,5,vertices);
+    addOnVertices(1,37,vertices);
     addOnVertices(2,3,vertices);
     addOnVertices(2,5,vertices);
     addOnVertices(2,7,vertices);
@@ -141,8 +145,8 @@ void addIndianMap(vector<vertex>& vertices){
 }
 
 void defaultInput(int n,int m,vector<vertex>& vertices){
-    n = 37;
-    m = 37;
+    n = 38;
+    m = 38;
     addIndianMap(vertices);
 }
 
@@ -153,7 +157,7 @@ int main()
     cin >> n;
     bool checkInput = true;
     if(n==-1){
-        n = 37;
+        n = 38;
         checkInput = false;
     }
     vector<vertex> vertices(n);
